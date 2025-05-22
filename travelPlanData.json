@@ -1,0 +1,108 @@
+{
+    "10.2": [
+        {
+            "time": "09:11",
+            "title": "武汉站出发",
+            "desc": "乘坐G1234次列车前往绍兴",
+            "icon": "train-o",
+            "status": "active"
+        },
+        {
+            "time": "13:53",
+            "title": "抵达绍兴北站",
+            "desc": "乘坐出租车前往酒店",
+            "icon": "location-o",
+            "status": "active"
+        },
+        {
+            "time": "15:00",
+            "title": "入住酒店",
+            "desc": "绍兴古城酒店办理入住",
+            "icon": "hotel-o",
+            "status": "active"
+        },
+        {
+            "time": "16:30",
+            "title": "鲁迅故里",
+            "desc": "参观鲁迅纪念馆、百草园、三味书屋",
+            "icon": "guide-o",
+            "status": "active"
+        },
+        {
+            "time": "19:00",
+            "title": "晚餐时间",
+            "desc": "品尝绍兴特色美食",
+            "icon": "shop-o",
+            "status": "active"
+        }
+    ],
+    "10.3": [
+        {
+            "time": "09:00",
+            "title": "兰亭风景区",
+            "desc": "参观兰亭、曲水流觞",
+            "icon": "guide-o",
+            "status": "active"
+        },
+        {
+            "time": "12:00",
+            "title": "午餐时间",
+            "desc": "品尝兰亭特色美食",
+            "icon": "shop-o",
+            "status": "active"
+        },
+        {
+            "time": "14:00",
+            "title": "沈园",
+            "desc": "游览沈园，感受陆游与唐琬的爱情故事",
+            "icon": "guide-o",
+            "status": "active"
+        }
+    ],
+    "10.4": [
+        {
+            "time": "09:00",
+            "title": "柯岩风景区",
+            "desc": "游览柯岩、鉴湖",
+            "icon": "guide-o",
+            "status": "active"
+        },
+        {
+            "time": "12:00",
+            "title": "午餐时间",
+            "desc": "品尝柯岩特色美食",
+            "icon": "shop-o",
+            "status": "active"
+        },
+        {
+            "time": "14:00",
+            "title": "东湖风景区",
+            "desc": "游览东湖，欣赏水乡风光",
+            "icon": "guide-o",
+            "status": "active"
+        }
+    ],
+    "10.5": [
+        {
+            "time": "09:00",
+            "title": "柯岩风景区",
+            "desc": "游览柯岩、鉴湖",
+            "icon": "guide-o",
+            "status": "active"
+        },
+        {
+            "time": "13:27",
+            "title": "绍兴北站出发",
+            "desc": "乘坐G1235次列车返回武汉",
+            "icon": "train-o",
+            "status": "active"
+        },
+        {
+            "time": "18:43",
+            "title": "抵达武汉站",
+            "desc": "结束愉快的绍兴之旅",
+            "icon": "location-o",
+            "status": "active"
+        }
+    ]
+}
