@@ -212,7 +212,7 @@ const Home = {
                   <van-icon name="train-o" size="20" color="#8b4513" />
                 </div>
                 <div class="trip-info-text">
-                  返程：<span class="trip-info-time">10月5日 13:27</span> 绍兴北站
+                  出发：<span class="trip-info-time">10月4日 14:00</span> 绍兴酒店
                 </div>
               </div>
               <div class="trip-info-item">
@@ -220,7 +220,23 @@ const Home = {
                   <van-icon name="location-o" size="20" color="#8b4513" />
                 </div>
                 <div class="trip-info-text">
-                  到达：<span class="trip-info-time">10月5日 18:43</span> 武汉站
+                  抵达：<span class="trip-info-time">10月4日 15:00</span> 杭州姑娘桥
+                </div>
+              </div>
+              <div class="trip-info-item">
+                <div class="trip-info-icon">
+                  <van-icon name="train-o" size="20" color="#8b4513" />
+                </div>
+                <div class="trip-info-text">
+                  返程：<span class="trip-info-time">10月6日 13:27</span> 绍兴北站
+                </div>
+              </div>
+              <div class="trip-info-item">
+                <div class="trip-info-icon">
+                  <van-icon name="location-o" size="20" color="#8b4513" />
+                </div>
+                <div class="trip-info-text">
+                  到达：<span class="trip-info-time">10月6日 18:43</span> 武汉站
                 </div>
               </div>
             </div>
@@ -478,7 +494,6 @@ const DayPlan = {
                         <div>{{ item.desc }}</div>
                     </van-step>
                 </van-steps>
-                <van-button class="theme-btn" @click="queryToXHS" style="margin-top:8px;">探索美食</van-button>
               </div>
             </div>
           </div>
@@ -497,44 +512,6 @@ const DayPlan = {
         onClickLeft() {
             this.$router.push("/date-select");
         },
-        queryToXHS() {
-            const appUrl = "xhsdiscover://search_result?keyword=绍兴美食";
-            const h5Url = "https://www.xiaohongshu.com/search_result?keyword=绍兴美食";
-            
-            // 判断是否为移动设备
-            const isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
-            console.log(isMobile)
-            if (!isMobile) {
-                // 非移动设备直接跳转H5
-                window.open(h5Url, '_blank');
-                return;
-            }
-
-            // 移动设备尝试唤起App
-            const startTime = Date.now();
-            try {
-                window.location.href = appUrl;
-            } catch (e) {
-                // 如果唤起失败，直接跳转H5
-                window.open(h5Url, '_blank');
-                return;
-            }
-
-            // 监听页面可见性变化
-            const handleVisibilityChange = () => {
-                if (document.hidden) {
-                    // 页面隐藏，说明成功唤起App
-                    document.removeEventListener("visibilitychange", handleVisibilityChange);
-                } else {
-                    // 页面未隐藏，且时间在2秒内，说明唤起失败
-                    if (Date.now() - startTime < 2000) {
-                        window.open(h5Url, '_blank');
-                    }
-                    document.removeEventListener("visibilitychange", handleVisibilityChange);
-                }
-            };
-            document.addEventListener("visibilitychange", handleVisibilityChange);
-        }
     },
 };
 
